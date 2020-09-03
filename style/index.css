@@ -35,40 +35,58 @@ body{
     line-height: 1;
     font-family: 'Architects Daughter', cursive;
     font-size: 1.6rem;
+    background-color: black;
+}
+.body{
     margin: 2%;
 }
-header .headerBar{
+header {
     display: flex;
 }
-header .headerBar h2{
+header h2{
     font-size: 4rem;
     justify-content: flex-start;
+    color: white;
 }
-header .headerBar nav{
+header nav{
     display: flex;
     justify-content: flex-end;
 }
-header .title{
+.title{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background: url('https://cdn.pixabay.com/photo/2015/03/11/12/31/new-york-668616_1280.jpg');
+    height: 60vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 4%;
 }
-header h1{
+h1{
     font-size: 8rem;
 }
-header .title .myProjects{
+.myProjects{
     background-color: lightblue;
     color: black;
     padding: 0.5%;
-    margin: 1%;
+    margin: 4%;
 }
 #projects{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }
 #projects img{
-    width: 20rem;
-    height: 20rem;
+    width: 40rem;
+    height: 33rem;
+}
+footer{
+    padding: 3rem 0;
+    background-color: #4FA4F9;
+}
+footer a{
+    display: flex;
+    justify-content: center;
 }
