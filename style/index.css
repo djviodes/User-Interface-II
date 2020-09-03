@@ -26,7 +26,7 @@ footer, header, hgroup, menu, nav, section {
 }
 *{
     box-sizing: border-box;
-    border: 1px solid grey;
+    /* border: 1px solid grey; */
 }
 html{
     font-size: 62.5%;
@@ -46,7 +46,8 @@ header {
 header h2{
     font-size: 4rem;
     justify-content: flex-start;
-    color: white;
+    color: #00A3AD;
+    padding-left: 6rem;
 }
 header nav{
     display: flex;
@@ -57,7 +58,7 @@ header nav{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: url('https://cdn.pixabay.com/photo/2015/03/11/12/31/new-york-668616_1280.jpg');
+    background: url('https://cdn.pixabay.com/photo/2015/12/08/00/30/golden-gate-bridge-1081782_1280.jpg');
     height: 60vh;
     background-size: cover;
     background-repeat: no-repeat;
@@ -66,9 +67,10 @@ header nav{
 }
 h1{
     font-size: 8rem;
+    color: #00A3AD;
 }
 .myProjects{
-    background-color: lightblue;
+    background-color: #00A3AD;
     color: black;
     padding: 0.5%;
     margin: 4%;
@@ -77,16 +79,31 @@ h1{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    padding: 5%;
 }
 #projects img{
     width: 40rem;
     height: 33rem;
 }
+#projects p{
+    color: #00A3AD;
+    text-align: center;
+    padding: 2% 0 7% 0;
+}
 footer{
-    padding: 3rem 0;
-    background-color: #4FA4F9;
+    padding: 1rem 0;
+    background-color: #00A3AD;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 footer a{
     display: flex;
     justify-content: center;
+    color: black;
+}
+footer img{
+    width: 5rem;
+    height: 5rem;
 }
