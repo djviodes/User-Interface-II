@@ -55,7 +55,7 @@ header {
 }
 header h2{
     font-size: 4rem;
-    color: #00A3AD;
+    color: gold;
 }
 header nav{
     display: flex;
@@ -65,7 +65,7 @@ header nav{
 }
 header nav a{
     padding: 1%;
-    background-color: #00A3AD;
+    background-color: gold;
     color: black;
     border: 1px solid black;
 }
@@ -85,14 +85,16 @@ header nav a:hover{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    /* margin: 4%; */
+    box-shadow: 0 0 2rem 2rem black inset;
 }
 h1{
     font-size: 8rem;
-    color: #00A3AD;
+    background-color: black;
+    padding: 0.5%;
+    color: gold;
 }
 .myProjects{
-    background-color: #00A3AD;
+    background-color: gold;
     color: black;
     padding: 0.5%;
     margin: 4%;
@@ -114,10 +116,10 @@ h1{
     height: 33rem;
 }
 #projects img:hover{
-    border: 4px solid #00A3AD;
+    border: 4px solid gold;
 }
 #projects p{
-    color: #00A3AD;
+    color: gold;
     text-align: center;
     padding: 2% 0 7% 0;
 }
@@ -126,7 +128,7 @@ h1{
 
 footer{
     padding: 1rem 0;
-    background-color: #00A3AD;
+    background-color: gold;
     width: 100%;
 }
 footer a, footer div{
@@ -211,11 +213,7 @@ footer div .buried .icon3:hover{
     }
     header h2{
         font-size: 2rem;
-        /* margin: 2% 0; */
     }
-    /* header nav{
-        margin-bottom: 2%;
-    } */
     .title{
         height: 30vh;
     }
@@ -226,4 +224,31 @@ footer div .buried .icon3:hover{
         width: 20rem;
         height: 13rem;
     }
+    footer .icon1img{
+        width: 4rem;
+        height: 4rem;
+    }
+    footer .icon2img{
+        width: 3.7rem;
+        height: 3.7rem;
+    }
+    footer .icon3img{
+        width: 3rem;
+        height: 3rem;
+    }
 }
+
+/*@media querie for those who prefer reduced motion*/
+
+@media (prefers-reduced-motion){
+    footer div .buried .icon1:hover{
+      animation: none;
+    }
+    footer div .buried .icon2:hover{
+        animation: none;
+      }
+      footer div .buried .icon3:hover{
+        animation: none;
+      }
+  }
+  
