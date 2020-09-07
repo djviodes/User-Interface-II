@@ -32,37 +32,49 @@ html{
     font-size: 62.5%;
 }
 body{
+    display: flex;
+    justify-content: center;
     line-height: 1;
     font-family: 'Architects Daughter', cursive;
     font-size: 1.6rem;
     background-color: black;
+    width: 100%;
 }
 .body{
-    margin: 2%;
+    /* border: 3px solid white; */
+    max-width: 95%;
 }
+
+/*Header Stylings*/
+
 header {
     display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    margin: 1% 2%
 }
 header h2{
     font-size: 4rem;
-    justify-content: flex-start;
     color: #00A3AD;
-    padding-left: 6rem;
 }
 header nav{
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-evenly;
     align-items: center;
-    width: 78.25%;
+    padding-right: 1%;
 }
 header nav a{
     padding: 1%;
     background-color: #00A3AD;
     color: black;
+    border: 1px solid black;
 }
 header nav a:hover{
     text-decoration: underline;
 }
+
+/*Title Section Stylings*/
+
 .title{
     display: flex;
     flex-direction: column;
@@ -73,7 +85,7 @@ header nav a:hover{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    margin: 4%;
+    /* margin: 4%; */
 }
 h1{
     font-size: 8rem;
@@ -88,6 +100,9 @@ h1{
 .myProjects:hover{
     text-decoration: underline;
 }
+
+/*Projects Section Stylings*/
+
 #projects{
     display: flex;
     justify-content: space-evenly;
@@ -106,6 +121,9 @@ h1{
     text-align: center;
     padding: 2% 0 7% 0;
 }
+
+/*Footer Stylings*/
+
 footer{
     padding: 1rem 0;
     background-color: #00A3AD;
@@ -122,7 +140,15 @@ footer a{
     justify-content: center;
     color: black;
 }
-footer img{
+footer .icon1img{
+    width: 6rem;
+    height: 6rem;
+}
+footer .icon2img{
+    width: 5.7rem;
+    height: 5.7rem;
+}
+footer .icon3img{
     width: 5rem;
     height: 5rem;
 }
@@ -145,11 +171,11 @@ footer a:hover{
     }
 }
 footer div .buried .icon1:hover{
-    animation: spinAround 2s linear infinite;
+    animation: spinAround 2s;
 }
 footer div .buried .icon2:hover{
-    animation: spinAround 2s linear infinite;
+    animation: spinAround 2s;
 }
 footer div .buried .icon3:hover{
-    animation: spinAround 2s linear infinite;
+    animation: spinAround 2s;
 }
